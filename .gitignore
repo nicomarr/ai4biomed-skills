@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Build artifacts
+*.skill
+*.zip
+dist/
+build/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+.history/
+logs/
