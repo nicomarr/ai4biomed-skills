@@ -1,0 +1,10 @@
+{
+  "name": "AI for Biomedical Research",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
+  "postCreateCommand": {
+    "python": "pip install uv && uv tool install llm && llm install llm-github-models llm-anthropic llm-gemini && llm models default github/gpt-4.1",
+    "node": "npm install -g @anthropic-ai/claude-code",
+    "deps": "uv venv && source .venv/bin/activate && uv pip install 'httpx[socks]' pytest"
+  },
+  "remoteUser": "vscode"
+}
