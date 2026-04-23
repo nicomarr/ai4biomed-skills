@@ -21,3 +21,4 @@ build/
 # Logs
 .history/
 logs/
+.specstory/
