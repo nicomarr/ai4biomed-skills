@@ -23,6 +23,12 @@ These skills compose naturally: use `search-pubmed` to find relevant literature,
 
 A workflow skill for co-authoring funder-facing documents — grant proposals, letters of intent, concept notes, fundraising strategies, progress reports, and policy briefs — for the [Kintampo Health Research Centre](https://kintampo-hrc.org/). Bundles a reference library scraped from the KHRC website and a 2026 funder-landscape report, and applies anti-hallucination evidence rules that prefer verifiable PubMed / DOI / URL citations over unsourced claims. For citation grounding it composes with the two skills above: `search-pubmed` to confirm titles/authors/PMIDs and `search-openalex` for citation counts and DOIs.
 
+### [`study-protocol-pre-review`](study-protocol-pre-review/)
+
+A pre-submission check skill for human-subjects study protocols and their associated documents (Informed Consent Form, Investigator's Brochure, site-specific SOPs, recruitment material, data collection forms). Supports an internal review *before* the package is submitted to an Institutional Ethics Committee, IRB, REC, or regulatory authority. The skill is a fact-flagger and source-citer — not a judge: it applies established framework checklists (SPIRIT 2025 for interventional trials; STROBE-derived guidance for observational protocols; 45 CFR §46.116 + WHO ERC + CIOMS 2016 for informed consent; the WHO ERC Guide for Principal Investigators) and produces a structured pre-review document where every flagged gap is paired with verbatim framework wording and a primary-source citation. All judgments — severity, acceptability, readiness, required action — are explicitly left to the human reviewer and the formal ethics review. Bundles five WHO ERC Informed Consent Form templates as handoff assets; output rendered to Markdown by default, and to PDF or DOCX via Pandoc on request. Composes with `search-pubmed` for indication-specific literature listing during pre-review, and with `search-openalex` for citation-count enrichment of those results.
+
+This skill does **not** constitute ethical approval, regulatory clearance, or legal advice. Status: pre-release v0.1.0.
+
 ## Using in GitHub Codespaces
 
 Click the badge above to launch a ready-to-use cloud environment with everything pre-installed — no setup required.
