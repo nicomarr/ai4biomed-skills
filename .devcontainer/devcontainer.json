@@ -8,7 +8,7 @@
   },
   "postCreateCommand": {
     "python": "pip install uv && uv tool install llm && llm install llm-github-models llm-anthropic llm-gemini && llm models default github/gpt-4.1",
-    "node": "npm install -g @anthropic-ai/claude-code",
+    "node": "npm install -g @anthropic-ai/claude-code @earendil-works/pi-coding-agent",
     "deps": "uv venv && source .venv/bin/activate && uv pip install 'httpx[socks]' pytest"
   },
   "remoteUser": "vscode"

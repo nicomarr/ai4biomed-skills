@@ -34,11 +34,12 @@ This skill does **not** constitute ethical approval, regulatory clearance, or le
 Click the badge above to launch a ready-to-use cloud environment with everything pre-installed — no setup required.
 
 What's included out of the box:
-- **`llm`** — a command-line tool to chat with AI models. Comes pre-configured with access to GPT-4.1 at no cost via your GitHub account
-- **Claude Code** — an AI coding assistant you can use directly in the terminal
-- **All three skills** — available to `llm` and Claude Code automatically via `.claude/skills/` and `.agents/skills/`
+- [**`llm`**](https://llm.datasette.io/en/stable/) — a command-line tool to chat with AI models, developed by Simon Willison & contributors. Comes pre-configured with access to GPT-4.1 at no cost via your GitHub account
+- [**Claude Code**](https://github.com/anthropics/claude-code) — Anthropic's agentic coding tool you can use directly in the terminal (subscription required, supports Anthropic models only)
+- [**Pi**](https://pi.dev) — a minimal terminal coding harness developed by Mario Zechner & contributors, now living under the Earendil Works GitHub and npm organization. Pi supports multiple LLMs (Claude, GPT, GitHub Copilot) via `/login` or API key
+- **All skills** — available to Pi and Claude Code automatically via `.claude/skills/` and `.agents/skills/`
 
-To get started with Claude Code, run `claude` in the terminal and follow the login prompt.
+To get started with Claude Code, run `claude` in the terminal and follow the login prompt. To get started with Pi, run `pi` and use `/login` to authenticate. In Codespaces, Pi works out of the box with GitHub Copilot models — no extra authentication needed. To use `llm`, just run `llm "Your message here"` and start chatting with the default model (GPT-4.1 via GitHub).
 
 ## Installing a skill
 
